@@ -247,23 +247,7 @@ blockquote {
 
 .social {
   text-align: center;
-  .contact-icons {
-    font-size: 4rem;
-    a {
-      i::before {
-        color: var(--global-text-color);
-        transition-property: all 0.2s ease-in-out;
-      }
-      &:hover {
-        i::before {
-          color: var(--global-theme-color);
-        }
-      }
-    }
-  }
-  .contact-note {
-    font-size: 0.8rem;
-  }
+  font-size: 2.5rem;
 }
 
 
