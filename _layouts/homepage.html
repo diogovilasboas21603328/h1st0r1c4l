@@ -6,6 +6,7 @@ layout: default
   .bg-img{
     background-image: url("https://www.history.com/.image/t_share/MTg2MDI2NTMyODI3ODM0MDUx/medieval-xmas-a872te.jpg");
     background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
     width: 100vw;
     height: calc(100vh - 80px);
@@ -14,14 +15,14 @@ layout: default
   }
   .bg-white-transparent{
     background-color: rgba(255, 255, 255, 0.7);
-    height: 50vh;
+    height: fit-content;
     width:100%;
     display: grid;
     align-items: center;
   }
   html[data-theme='dark'] .bg-white-transparent{
     background-color: rgba(0, 0, 0, 0.7);
-    height: 50vh;
+    height: fit-content;
     width:100%;
     display: grid;
     align-items: center;
@@ -31,9 +32,11 @@ layout: default
   
 <div class="bg-img">
     <div class="bg-white-transparent">
-        <div class="header-bar border-0 m-auto">
-          <h1 class="mb-5">Bringing history to your home</h1>
-          <input class="btn btn-primary rounded btn-lg" style="background: var(--global-theme-color)!important;" type="button" value="Learn more">
+        <div class="border-0 m-auto py-5">
+          <h1 class="display-4 mx-auto mb-5 primary text-center">Bringing history to your home</h1>
+          <div class="m-auto mb-5 w-fit-content">
+            <input class="btn btn-primary rounded btn-lg" style="background: var(--global-theme-color)!important;" type="button" value="Learn more">
+          </div>
         </div>
     </div>
 </div>
